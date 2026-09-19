@@ -5,28 +5,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/styles.css">
 </head>
 
 <body>
-    <nav>
-        <a href="#" class="logo">★ Umar.DEV</a>
-        <a href="#work" class="nav-link">WORK</a>
+    <nav class="navbar">
+        <a href="#" class="logo">★ UMAR.DEV</a>
+        <div class="nav-links">
+            <a href="#about">ABOUT</a>
+            <a href="#work">WORK</a>
+            <a href="#skills">SKILLS</a>
+            <a href="#contact" class="btn-nav">CONTACT</a>
+        </div>
     </nav>
-    <header>
+    <header id="about">
+        <div class="badge">AVAILABLE FOR FREELANCE</div>
         <h1>CREATIVE <span>DEVELOPER</span></h1>
-        <p>Building colorful, modern & dynamic web experiences.</p>
+        <p>Building colorful, modern & dynamic web experiences with clean HTML & CSS.</p>
+        <a href="#work" class="btn-primary">View Projects</a>
     </header>
-    <main id="work">
-        <div class="card">
-            <h3>NEON GRID</h3>
-            <p>CSS GRID AND DYNAMIC GLOWS</p>
+    <section class="section-container" id="work">
+        <h2 class="section-title">FEATURED <span>PROJECTS</span></h2>
+        <main class="grid-container">
+            <div class="card">
+                <h3>NEON GRID</h3>
+                <p>CSS Grid & Dynamic Glows with modern responsive layout logic.</p>
+                <span class="tag">HTML / CSS</span>
+            </div>
+            <div class="card">
+                <h3>GLASS UI</h3>
+                <p>Backdrop Blur & Gradients utilizing modern web design filters.</p>
+                <span class="tag">UI/UX</span>
+            </div>
+        </main>
+    </section>
+    <section class="section-container" id="skills">
+        <h2 class="section-title">MY <span>SKILLS</span></h2>
+        <div class="skills-grid">
+            <div class="skill-pill">HTML5 Structural Design</div>
+            <div class="skill-pill">CSS3 Flexbox & Grid</div>
+            <div class="skill-pill">Responsive Web Layouts</div>
+            <div class="skill-pill">CSS Animations & FX</div>
         </div>
-        <div class="card">
-            <h3>GLASS UI</h3>
-            <p>Backdrop Blur & Gradients</p>
-        </div>
-    </main>
+    </section>
+    <section class="section-container" id="contact">
+        <h2 class="section-title">GET IN <span>TOUCH</span></h2>
+        <form class="contact-form" action="#" method="post" onsubmit="return false;">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea rows="4" placeholder="Your Message..." required></textarea>
+            <button type="submit" class="btn-primary">Send Message</button>
+        </form>
+    </section>
+    <footer>
+
+        <p>&copy; 2026 Umar Dev All Rights reserved</p>
+    </footer>
 </body>
 
 </html>
