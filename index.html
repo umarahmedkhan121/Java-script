@@ -4,95 +4,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Itachi Uchiha | Prodigy of the Leaf</title>
+    <meta name="description" content="A beginner developer portfolio showing skills, projects, and contact details.">
+    <title>Alex Morgan | Beginner Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cloudflare.com">
 </head>
 
 <body>
-    <canvas id="genjutsuCanvas"></canvas>
-    <header>
-        <a href="#" class="logo">Itachi<span>.</span></a>
-        <nav class="navbar">
-            <a href="#home" class="active">Home</a>
-            <a href="#abilities">Abilities</a>
-            <a href="#stats">Shinobi Stats</a>
+    <header class="site-header">
+        <a class="logo" href="#top">AM<span>.</span></a>
+        <nav aria-label="Main navigation">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
         </nav>
     </header>
 
-    <section class="home" id="home">
-        <div class="home-img" id="parallaxCard">
-            <img src="main.jpg" alt="Itachi Uchiha">
-        </div>
-        <div class="home-contents">
-            <h1>Hi, It's <span>Itachi Here</span></h1>
-            <h3 class="typing-text">The Ultimate <span id="typeTarget">Shinobi Assassin</span></h3>
-            <p>Itachi is one of the most complex antiheroes in the Naruto universe, defined by profound sacrifice,
-                brilliant intellect, and elite shinobi skills. As a prodigy of the Uchiha clan, he bore the ultimate
-                burden of hatred and infamy in order to prevent a civil war and keep his beloved brother safe from the
-                shadows.</p>
+    <main id="top">
+        <section class="hero section-wrap" id="about">
+            <div class="hero-copy">
+                <p class="eyebrow">Hello, I'm Umar</p>
+                <h1>I am learning to build <span>cool things</span> for the web.</h1>
+                <p class="intro">I'm a beginner front-end developer who enjoys turning small ideas into friendly, useful
+                    websites. This portfolio is a little snapshot of what I'm learning.</p>
+                <div class="hero-buttons">
+                    <a class="button button-primary" href="#projects">See my projects <span>↓</span></a>
+                    <a class="button button-quiet" href="#contact">Let's talk <span>↗</span></a>
+                </div>
+            </div>
+            <div class="profile-area">
+                <div class="profile-frame">
+                    <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=700&q=85"
+                        alt="Portrait of Umar Ahmed">
+                </div>
+                <p class="photo-note">Currently based in<br><strong>the internet 🌎</strong></p>
+            </div>
+        </section>
 
-            <div class="jutsu-icons">
-                <a href="#" title="Sharingan"><img src="sharingan.png" alt="Sharingan"></a>
-                <a href="#" title="Mangekyo Sharingan"><img src="mangekyo.png" alt="Mangekyo"></a>
-                <a href="#" title="Tsukuyomi"><img src="tsukuyomi.png" alt="Tsukuyomi"></a>
-                <a href="#" title="Amaterasu"><img src="amaterasu.png" alt="Amaterasu"></a>
-                <a href="#" title="Susanoo"><img src="susanoo.png" alt="Susanoo"></a>
+        <section class="skills-section section-wrap" id="skills">
+            <div class="section-heading">
+                <p class="eyebrow">What I use</p>
+                <h2>My growing toolbox</h2>
             </div>
-            <a href="#abilities" class="btn">Examine Ultimate Jutsu</a>
-        </div>
-    </section>
+            <div class="skills-grid">
+                <div class="skill-card"><span class="skill-icon">&lt;/&gt;</span>
+                    <h3>HTML</h3>
+                    <p>Building page structure</p>
+                </div>
+                <div class="skill-card"><span class="skill-icon">#</span>
+                    <h3>CSS</h3>
+                    <p>Making things look nice</p>
+                </div>
+                <div class="skill-card"><span class="skill-icon">JS</span>
+                    <h3>JavaScript</h3>
+                    <p>Adding simple interactions</p>
+                </div>
+                <div class="skill-card"><span class="skill-icon">G</span>
+                    <h3>Git</h3>
+                    <p>Saving my progress</p>
+                </div>
+            </div>
+        </section>
 
-    <section class="abilities-section" id="abilities">
-        <h2 class="section-title">Legendary <span>Abilities</span></h2>
-        <div class="ability-grid">
-            <div class="ability-card">
-                <i class="fa-solid fa-eye eye-red"></i>
-                <h3>Tsukuyomi</h3>
-                <p>An absolute Genjutsu powered by his left Mangekyō Sharingan. Traps opponents in an illusionary realm
-                    where Itachi alters their perception of space and time completely.</p>
+        <section class="projects-section section-wrap" id="projects">
+            <div class="section-heading project-heading">
+                <div>
+                    <p class="eyebrow">A few experiments</p>
+                    <h2>Projects I'm proud of</h2>
+                </div>
+                <p class="heading-note">Small steps still count.<br>Here are some of mine.</p>
             </div>
-            <div class="ability-card">
-                <i class="fa-solid fa-fire-blaze fire-black"></i>
-                <h3>Amaterasu</h3>
-                <p>Triggered through his right Mangekyō Sharingan. Conjures jet-black flames at the user's exact focal
-                    point that will burn continuously until the target is reduced entirely to ash.</p>
+            <div class="project-grid">
+                <article class="project-card">
+                    <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=900&q=80"
+                        alt="Laptop and coffee on a desk">
+                    <div class="project-content">
+                        <p class="project-number">01 / Practice project</p>
+                        <h3>Little Shop</h3>
+                        <p>A simple online shop layout made while learning CSS Grid and responsive design.</p>
+                        <div class="tags"><span>HTML</span><span>CSS</span></div>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <img src="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?auto=format&fit=crop&w=900&q=80"
+                        alt="Notebook with a to-do list">
+                    <div class="project-content">
+                        <p class="project-number">02 / Practice project</p>
+                        <h3>Daily Done</h3>
+                        <p>A cheerful task list concept that helps make busy days feel a little more manageable.</p>
+                        <div class="tags"><span>JavaScript</span><span>UI Design</span></div>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=900&q=80"
+                        alt="Laptop and notebook beside a plant">
+                    <div class="project-content">
+                        <p class="project-number">03 / Coming soon</p>
+                        <h3>My Blog</h3>
+                        <p>A future home for notes about coding, creative experiments, and things I learn.</p>
+                        <div class="tags"><span>Writing</span><span>In progress</span></div>
+                    </div>
+                </article>
             </div>
-            <div class="ability-card">
-                <i class="fa-solid fa-shield-halved susanoo-purple"></i>
-                <h3>Susanoo</h3>
-                <p>The ultimate avatar protection summoned by awakening both eyes. Itachi's glowing red Susanoo
-                    brandishes the mythical Totsuka Blade to seal any foe instantly.</p>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="stats-section" id="stats">
-        <h2 class="section-title">Shinobi <span>Stats</span></h2>
-        <div class="stats-container">
-            <div class="stat-bar">
-                <div class="stat-info"><span>Ninjutsu</span><span>5.0 / 5.0</span></div>
-                <div class="bar-line"><span style="width: 100%;"></span></div>
+        <section class="contact-section section-wrap" id="contact">
+            <div class="contact-copy">
+                <p class="eyebrow">Say hello</p>
+                <h2>Have an idea?<br><span>Let's make it real.</span></h2>
+                <p>I'm always happy to chat about a project, a good idea, or your favorite kind of coffee.</p>
             </div>
-            <div class="stat-bar">
-                <div class="stat-info"><span>Genjutsu</span><span>5.0 / 5.0</span></div>
-                <div class="bar-line"><span style="width: 100%;"></span></div>
-            </div>
-            <div class="stat-bar">
-                <div class="stat-info"><span>Intelligence</span><span>5.0 / 5.0</span></div>
-                <div class="bar-line"><span style="width: 100%;"></span></div>
-            </div>
-            <div class="stat-bar">
-                <div class="stat-info"><span>Taijutsu</span><span>4.5 / 5.0</span></div>
-                <div class="bar-line"><span style="width: 90%;"></span></div>
-            </div>
-            <div class="stat-bar">
-                <div class="stat-info"><span>Stamina (Illness)</span><span>2.5 / 5.0</span></div>
-                <div class="bar-line"><span style="width: 50%;"></span></div>
-            </div>
-        </div>
-    </section>
+            <form id="contact-form">
+                <label for="name">Your name</label><input type="text" id="name" name="name" placeholder="Jane Doe"
+                    required>
+                <label for="email">Your email</label><input type="email" id="email" name="email"
+                    placeholder="jane@example.com" required>
+                <label for="message">Your message</label><textarea id="message" name="message" rows="4"
+                    placeholder="Tell me a little about it..." required></textarea>
+                <button class="button button-primary" type="submit">Send message <span>↗</span></button>
+                <p class="form-message" id="form-message" aria-live="polite"></p>
+            </form>
+        </section>
+    </main>
 
+    <footer class="site-footer section-wrap">
+        <p>© <span id="year"></span> Umar Ahmed. Made while learning.</p>
+        <div><a href="https://github.com/" target="_blank" rel="noreferrer">GitHub ↗</a><a
+                href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn ↗</a></div>
+    </footer>
     <script src="script.js"></script>
 </body>
 
